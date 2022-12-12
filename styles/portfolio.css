@@ -98,3 +98,18 @@ p {
 .web-img {
   max-width: 600px;
 }
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .project-description {
+    text-align: center;
+    padding: 30px;
+  }
+}
