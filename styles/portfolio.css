@@ -18,6 +18,12 @@ h1 {
   font-size: 65px;
 }
 
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -66,4 +72,29 @@ p {
   background-color: var(--accent-color);
   color: white;
   transition: all 250ms ease-in-out;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.description-text {
+  margin-top: 35px;
+  line-height: 1.8;
+}
+
+.btn-project {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 15px 20px;
+}
+
+.btn-project:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+
+.web-img {
+  max-width: 600px;
 }
