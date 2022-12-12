@@ -15,9 +15,55 @@ font-family: 'Poppins', sans-serif; */
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
+  font-size: 65px;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+}
+
+.hero-text {
+  margin-top: 170px;
+}
+
+.hero {
+  font-size: 16px;
+}
+
+.hero-card {
+  background-color: var(--bg-color);
+  margin: 15px;
+  padding-bottom: 120px;
+}
+
+.profile-picture {
+  max-width: 300px;
+  margin-top: 125px;
+  background: var(--secondary-color);
+}
+
+.about-link {
+  color: black;
+  opacity: 80%;
+  text-decoration: none;
+  margin-top: 70px;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+
+.contact-link {
+  background: var(--accent-color);
+  padding: 10px 15px;
+  margin: 15px;
+}
+
+.contact-link:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transition: all 250ms ease-in-out;
 }
