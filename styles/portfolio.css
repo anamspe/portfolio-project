@@ -44,7 +44,7 @@ p {
 }
 
 .profile-picture {
-  max-width: 300px;
+  max-width: 400px;
   margin-top: 125px;
   background: var(--secondary-color);
 }
@@ -96,7 +96,8 @@ p {
 }
 
 .web-img {
-  max-width: 600px;
+  max-height: 400px;
+  margin-top: 60px;
 }
 
 @media (max-width: 960px) {
