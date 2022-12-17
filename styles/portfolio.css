@@ -45,7 +45,7 @@ p {
 
 .profile-picture {
   max-width: 400px;
-  margin-top: 125px;
+  margin: 100px auto;
   background: var(--secondary-color);
 }
 
@@ -100,21 +100,40 @@ p {
   margin-top: 60px;
 }
 
+.about {
+  background-color: var(--bg-color);
+}
+
+.about-body {
+  padding: 170px;
+}
+
 .icons-media-container {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   opacity: 70%;
-  margin: 30px 700px;
+  margin: 30px 140px;
   padding: 10px;
   border-radius: 10px;
 }
 
 .icons-media {
   display: inline;
-  font-size: 40px;
+  font-size: 35px;
   margin: 20px;
-  padding: 20px;
-  color: grey;
+  color: #4b4848a4;
   text-decoration: none;
+}
+
+.work-link {
+  background: var(--accent-color);
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+.work-link:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transition: all 250ms ease-in-out;
 }
 
 @media (max-width: 960px) {
@@ -126,8 +145,23 @@ p {
     font-size: 32px;
   }
 
+  .profile-picture {
+    max-width: 300px;
+    margin: 20px auto !important;
+  }
+
   .project-description {
     text-align: center;
     padding: 30px;
+  }
+
+  .about-body {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .icons-media-container {
+    padding: 0;
+    margin: 30px;
   }
 }
