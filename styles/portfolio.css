@@ -24,6 +24,17 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -78,6 +89,11 @@ p {
   padding: 120px 60px;
 }
 
+.project-caption {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .description-text {
   margin-top: 35px;
   line-height: 1.8;
@@ -97,14 +113,15 @@ p {
 
 .web-img {
   max-height: 400px;
-  margin-top: 60px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
 }
 
-.about {
+.content-container {
   background-color: var(--bg-color);
 }
 
-.about-body {
+.content {
   padding: 170px;
 }
 

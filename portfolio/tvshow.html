@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Is Us appreciation page</title>
+    <style>
+      body {
+        margin: 30px 50px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      div {
+        border-radius: 15px;
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+        width: 70%;
+        margin: 20px auto;
+      }
+      h1 {
+        text-align: center;
+        padding-top: 10px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+        border: 1px solid white;
+        padding: 20px;
+        margin: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 85%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        padding: 10px 20px;
+        color: white;
+        background-color: rgb(235, 109, 182);
+        border: 1px dotted rgb(247, 171, 148);
+        border-radius: 10px;
+        box-shadow: 10px 5px 10px rgba(87, 87, 87, 0.85);
+        transition: all 250ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+      }
+
+      hr {
+        display: block;
+        margin: 30px;
+        color: white;
+      }
+
+      .summary {
+        padding: 0 35px;
+        margin: 25px;
+        line-height: 30px;
+      }
+
+      .netflix {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .netflix:hover {
+        text-decoration: underline;
+        font-style: italic;
+        color: darkred;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        padding: 15px;
+        opacity: 0.7;
+      }
+
+      .portfolio:hover {
+        font-weight: bold;
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>This Is Us</h1>
+      <h2>That's my <strong>favourite</strong> TV Show 📺</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/578/original/this-is-us-ending-season-six_0.jpg?1661459658"
+        alt="this is us cast"
+      />
+
+      <p class="summary">
+        Everyone has a family. And every family has a story. "<strong
+          >This Is Us</strong
+        >" chronicles the Pearson family across the decades: from Jack (<em
+          >Milo Ventimiglia</em
+        >) and Rebecca (<em>Mandy Moore</em>) as young parents in the 1980s to
+        their 37-year-old kids, Kevin (<em>Justin Hartley</em>), Kate (<em
+          >Chrissy Metz</em
+        >) and Randall (<em>Sterling K. Brown</em>) searching for love and
+        fulfillment in the present day. This grounded, life-affirming dramedy
+        reveals how the tiniest events in our lives impact who we become, and
+        how the connections we share with each other can transcend time,
+        distance and even death.
+      </p>
+      <hr />
+      <a
+        href="https://www.netflix.com/ca/title/80113702?source=35"
+        class="netflix"
+        target="_blank"
+        >Watch 'This Is Us' on Netflix</a
+      >
+      <br /><br />
+      <button>Share your favourite show with our community</button>
+      <p class="footer">
+        This page was built by
+        <a class="portfolio" href="https://beacons.ai/anamspe">Ana Franco</a>
+      </p>
+    </div>
+    <script>
+      function favShow() {
+        let name = prompt("What's your name?");
+        let show = prompt("What's your favourite TV Show?");
+        if (name.length || show.length) {
+          alert(
+            "Thank you, " +
+              name +
+              "! We'll make sure to add " +
+              show +
+              " to our watchlist! 🤩"
+          );
+        } else {
+          alert(
+            "If you don't share your name and/or favourite TV Show, we can't add it to the watchlist."
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", favShow);
+    </script>
+  </body>
+</html>
