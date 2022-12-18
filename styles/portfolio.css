@@ -40,14 +40,14 @@ p {
   font-size: 18px;
 }
 
-ul {
+ul.media {
   list-style: none;
   padding: 30px;
   margin: 50px;
   background-color: #ffe3b0;
 }
 
-li a {
+li.social a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -55,9 +55,38 @@ li a {
   color: grey;
 }
 
-li a:hover {
+li.social a:hover {
   color: white;
   transition: all 250ms ease-in-out;
+}
+
+nav {
+  padding: 20px 0 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  line-height: 40px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--accent-color);
 }
 
 .hero-text {
@@ -137,11 +166,8 @@ li a:hover {
   background-color: #f8f8f8;
 }
 
-.content-container {
-  background-color: var(--bg-color);
-}
-
 .content {
+  background-color: var(--bg-color);
   padding: 170px;
 }
 
@@ -214,7 +240,6 @@ li a:hover {
 
   .content {
     padding: 0;
-    margin: 25px;
     text-align: center;
   }
 }
